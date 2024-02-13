@@ -1,5 +1,11 @@
 # @orionpkg/ui
 
+## 0.0.7
+
+### Patch Changes
+
+- [#8](https://github.com/orionpkg/ui/pull/8) [`a782ee1`](https://github.com/orionpkg/ui/commit/a782ee10bd915838bf9ceee4b2b6893e207c05ef) Thanks [@cabellonic](https://github.com/cabellonic)! - build: :building_construction: update dependencies in package.json
+
 ## 0.0.6
 
 ### Patch Changes
