@@ -1,8 +1,11 @@
 name: Release
 
 on:
-    release:
-        types: [created]
+    push:
+        branches:
+            - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
     release:
@@ -32,7 +35,15 @@ jobs:
               run: |
                   pnpm test
 
-            - name: Publish to npm
-              run: pnpm publish --access public --no-git-checks
+            - name: Create Release Pull Request or Publish to NPM
+              id: changesets
+              uses: changesets/action@v1
+              with:
+                  publish: npm run release
+                  version: npm run version
+                  title: 'ci(changesets): :package: new package version'
+                  commit: 'ci(changesets): :package: new package version'
+                  setupGitUser: false
               env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
