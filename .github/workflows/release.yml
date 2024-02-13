@@ -39,6 +39,11 @@ jobs:
               run: |
                   pnpm build
 
+            - name: Set up git user
+              run: |
+                  git config user.name "OrionUI Bot"
+                  git config user.email "cabellonic@gmail.com"
+
             - name: Create Release Pull Request or Publish to NPM
               id: changesets
               uses: changesets/action@v1
