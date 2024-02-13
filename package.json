@@ -30,7 +30,8 @@
 			"types": "./dist/index.d.ts"
 		},
 		"./package.json": "./package.json",
-		"./dist/*": "./dist/*"
+		"./dist/*": "./dist/*",
+		"./style.css": "./style.css"
 	},
 	"files": [
 		"/dist"
