@@ -1,5 +1,11 @@
 # @orionpkg/ui
 
+## 0.0.6
+
+### Patch Changes
+
+- [#6](https://github.com/orionpkg/ui/pull/6) [`9a46b02`](https://github.com/orionpkg/ui/commit/9a46b024271dfe4bb2bf5685e84ef1a3a4e42d2a) Thanks [@cabellonic](https://github.com/cabellonic)! - Build/export path types
+
 ## 0.0.5
 
 ### Patch Changes
