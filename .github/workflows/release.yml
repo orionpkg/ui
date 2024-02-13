@@ -33,6 +33,6 @@ jobs:
                   pnpm test
 
             - name: Publish to npm
-              run: pnpm publish --access public
+              run: pnpm publish --access public --publish-branch main
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
