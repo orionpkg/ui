@@ -39,8 +39,8 @@ jobs:
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: npm run release
-                  version: npm run version
+                  publish: pnpm ci:publish
+                  version: pnpm ci:version
                   title: 'ci(changesets): :package: new package version'
                   commit: 'ci(changesets): :package: new package version'
                   setupGitUser: false
