@@ -17,7 +17,7 @@
 		"test": "vitest",
 		"test:run": "vitest --run",
 		"prepare": "husky install",
-		"ci:version": "pnpm changeset",
+		"ci:version": "changeset version",
 		"ci:publish": "pnpm publish -r"
 	},
 	"main": "dist/index.umd.js",
